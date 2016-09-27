@@ -717,10 +717,6 @@
   nnoremap <up> :tabnext<CR>
   nnoremap <down> :tabprev<CR>
 
-  " smash escape
-  inoremap jk <esc>
-  inoremap kj <esc>
-
   " change cursor position in insert mode
   inoremap <C-h> <left>
   inoremap <C-l> <right>
