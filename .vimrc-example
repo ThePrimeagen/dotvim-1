@@ -1,0 +1,24 @@
+let g:dotvim_settings = {}
+let g:dotvim_settings.version = 2
+let g:dotvim_settings.default_indent = 4
+let g:dotvim_settings.max_column = 80
+
+source ~/.vim/vimrc
+
+nmap s s
+map <F3> :%s/\s\+$//e<CR>
+autocmd BufWritePre * %s/\s\+$//e
+"
+  " NerdTree {
+      let NERDTreeMapToggleHidden=1
+      map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+      map <leader>e :NERDTreeFind<CR>
+      nmap <leader>nt :NERDTreeFind<CR>
+
+      let NERDTreeShowBookmarks=1
+      let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
+      let NERDTreeChDirMode=0
+      let NERDTreeQuitOnOpen=1
+      let NERDTreeShowHidden=1
+      let NERDTreeKeepTreeInNewTab=1
+  " }
